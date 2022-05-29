@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import Addbus from './component/Addbus';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Viewbus from './component/Viewbus';
+import Searchbus from './component/Searchbus';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Routes>
 <Route path='/' exact element={<Addbus/>}/>
 <Route path='/view' exact element={<Viewbus/>}/>
+<Route path='/search' exact element={<Searchbus/>}/>
 
       
     </Routes>
